@@ -81,4 +81,7 @@ DELETE FROM [Bicycle] WHERE [Id] = 1;  --Delete row
 
 SELECT * FROM Bicycle;
 
+DBCC CHECKIDENT ('Bicycle', RESEED, 0)  --to reset Identity
+DBCC CHECKIDENT ('Detail', RESEED, 0) --to reset Identity
+
 
